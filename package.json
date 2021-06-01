@@ -1,0 +1,20 @@
+{
+  "name": "ocean-backend-01-06-2021",
+  "version": "1.0.0",
+  "description": "Entenda de uma vez por todas o que é backend e quais são as tecnologias envolvidas nesse pedaço tão importante de um software, responsável pela maior parte do processamento de informações e por proteger a camada de banco de dados da aplicação.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulosalvatore/ocean-backend-01-06-2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulosalvatore/ocean-backend-01-06-2021/issues"
+  },
+  "homepage": "https://github.com/paulosalvatore/ocean-backend-01-06-2021#readme"
+}
