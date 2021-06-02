@@ -18,7 +18,7 @@ app.post("/mensagens", function (req, res) {
 
     // const id = mensagens.length;
 
-    res.send(`Mensagem com ID '${id}' criada com sucesso.`);
+    res.status(201).send(`Mensagem com ID '${id}' criada com sucesso.`);
 });
 
 // Read All (Ler todas as mensagens)
