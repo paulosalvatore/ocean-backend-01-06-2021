@@ -36,6 +36,15 @@ app.get("/mensagens/:id", function (req, res) {
 });
 
 // Update (Editar uma mensagem)
+app.put("/mensagens/:id", function (req, res) {
+    const id = req.params.id - 1;
+
+    const mensagem = req.body.mensagem;
+
+    mensagens[id] = mensagem;
+
+    res.send("Mensagem atualizada com sucesso.");
+});
 
 // Delete (Remover uma mensagem)
 app.delete("/mensagens/:id", function (req, res) {
