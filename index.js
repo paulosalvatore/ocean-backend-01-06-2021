@@ -14,6 +14,15 @@ const mensagens = ["Essa é a primeira mensagem", "Essa é a segunda mensagem"];
 app.post("/mensagens", function (req, res) {
     const mensagem = req.body.mensagem;
 
+    // Verifica se a chave 'mensagem' está presente no objeto JSON da requisição (enviado no corpo da requisição)
+    if (!mensagem) {
+        res.status(400).send(
+            "Chave 'mensagem' não encontrada no objeto JSON da requisição."
+        );
+
+        return;
+    }
+
     const id = mensagens.push(mensagem);
 
     // const id = mensagens.length;
@@ -71,6 +80,13 @@ app.put("/mensagens/:id", function (req, res) {
 // Delete (Remover uma mensagem)
 app.delete("/mensagens/:id", function (req, res) {
     const id = req.params.id - 1;
+
+    // Verifica se o ID que está sendo editado existe na lista de mensagens
+    if (!mensagens[id]) {
+        res.status(404).send("Mensagem não encontrada.");
+
+        return;
+    }
 
     delete mensagens[id];
 
