@@ -23,7 +23,7 @@ app.post("/mensagens", function (req, res) {
 
 // Read All (Ler todas as mensagens)
 app.get("/mensagens", function (req, res) {
-    res.send(mensagens);
+    res.send(mensagens.filter(Boolean));
 });
 
 // Read Single (Ler apenas uma mensagem)
