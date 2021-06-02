@@ -88,4 +88,15 @@ Você entenderá desde os princípios do backend, tendo uma introdução complet
   - É como se eu quebrasse o backend em várias aplicações
   - Arquitetura de microsserviços
 - **REST, Node, NPM, HTTP, Criar projeto**
+- **REST (Verbos de comunicação: GET, POST, PUT, DELETE)**
+  - Comunicação HTTP
+  - Toda comunicação HTTP possui verbos: GET, POST, PUT, DELETE
+    - POST: Criar informação
+    - GET: Obter informação
+  - REST -> CRUD (Create, Read, Update, Delete):
+    - [POST] `/mensagens`: **Create**
+    - [GET] `/mensagens`: **Read (All)**
+    - [GET] `/mensagens/:id` (Ex: `/mensagens/1`): **Read (Single)**
+    - [PUT] `/mensagens/:id` (Ex: `/mensagens/1`): **Update**
+    - [DELETE] `/mensagens/:id` (Ex: `/mensagens/1`): **Delete**
 
