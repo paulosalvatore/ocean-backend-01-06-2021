@@ -38,5 +38,12 @@ app.get("/mensagens/:id", function (req, res) {
 // Update (Editar uma mensagem)
 
 // Delete (Remover uma mensagem)
+app.delete("/mensagens/:id", function (req, res) {
+    const id = req.params.id - 1;
+
+    delete mensagens[id];
+
+    res.send("Mensagem removida com sucesso.");
+});
 
 app.listen(3000);
